@@ -254,11 +254,15 @@ function bitly_process_posts() {
 		wp_clear_scheduled_hook( 'bitly_hourly_hook' );
 	}
 }
+
+// Uncomment the code below to backfill and posts that don't have a bitly url
+
+/*
 add_action( 'bitly_hourly_hook', 'bitly_process_posts' );
+
 
 $bitly_processed = get_option( 'bitly_processed' );
 
-/*
 if ( !wp_next_scheduled( 'bitly_hourly_hook' ) && !$bitly_processed ) {
 	wp_schedule_event( time() + 30, 'hourly', 'bitly_hourly_hook' );
 }

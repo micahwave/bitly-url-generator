@@ -204,7 +204,9 @@ function bitly_get_url( $post_id = null ) {
  */
 function bitly_shortlink( $shortlink, $id, $context ) {
 	
-	if( $context == 'post' ) {
+	if ( 'post' == $context || ( 'query' == $context && is_single() ) ) {
+		if ( 'query' == $context )
+			$id = get_queried_object_id();
 		$bitly = bitly_get_url( $id );
 		if( $bitly ) $shortlink = esc_url( $bitly );
 	}

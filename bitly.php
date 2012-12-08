@@ -105,8 +105,8 @@ class Bitly {
 	 */
 	function get_options() {
 		return wp_parse_args( get_option('bitly_settings'), array(
-			'bitly_api_login' => '',
-			'bitly_api_key' => ''
+			'api_login' => '',
+			'api_key' => ''
 		));
 	}
 	

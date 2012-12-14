@@ -1,7 +1,7 @@
-=== bit.ly ===
+=== Bitly URL Generator ===
 Contributors: micahwave
 Donate link: 
-Tags: bitly, bit.ly, shortlink, url, url shortener
+Tags: bitly, bit.ly, shortlink, url, url shortener, url generator
 Requires at least: 3.3
 Tested up to: 3.5
 Stable tag: 

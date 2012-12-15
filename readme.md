@@ -1,4 +1,4 @@
-# Bitly URL Generator
+## Bitly URL Generator
 
 ### Usage
 

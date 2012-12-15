@@ -136,7 +136,7 @@ class Bitly {
 		register_setting( 'bitly_settings', 'bitly_settings', array( $this, 'validate_settings' ) );
 		
 		// create a sub menu page within settings menu page
-		add_submenu_page( 'options-general.php', 'bitly Settings', 'bitly', 'edit_theme_options', 'bitly-settings', array( $this, 'settings_page' ) );
+		add_submenu_page( 'options-general.php', 'Bitly Settings', 'Bitly', 'edit_theme_options', 'bitly-settings', array( $this, 'settings_page' ) );
 	}
 	
 	/**
@@ -172,7 +172,7 @@ class Bitly {
 		?>
 		<div class="wrap">
 			<div id="icon-options-general" class="icon32"><br></div>
-			<h2>bitly Settings</h2>
+			<h2>Bitly Settings</h2>
 			<form action="options.php" method="post">
 				<?php
 				wp_nonce_field( 'bitly_settings', 'bitly_settings_nonce', false );

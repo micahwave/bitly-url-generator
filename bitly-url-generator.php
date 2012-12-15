@@ -1,14 +1,17 @@
 <?php
 /**
- * Plugin Name: Bit.ly
+ * Plugin Name: Bitly URL Generator
  * Version: 1.0
  * Author: Micah Ernst
- * Description: Uses bit.ly API to get shortened url for a post on publish and saves url as meta data. Based on TIME.com's Bit.ly plugin.
+ * Author URI: http://micahernst.com
+ * Description: Uses bitly API to get shortened url for a post on publish and saves url as meta data.
  */
 
 class Bitly {
 	
-	// storing a copy of the api credentials
+	/**
+	 * Storing a copy of the api credentials
+	 */
 	var $options;
 	
 	/**
